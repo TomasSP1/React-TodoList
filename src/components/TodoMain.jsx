@@ -28,11 +28,19 @@ const TodoMain = () => {
         }
     ]);
 
+    const addTodoNewTask = (text) => {
+        // turiu iskviesti setTasks metoda
+        // turiu prideti nauja uzduoti i esamu uzduociu sarasa
+        const temporaryVar = [...tasks, {text, isCompleted: false}]
+        setTasks(temporaryVar);
+
+    }
+
 
   return (
     <div>
         <TableForTasks tasks={tasks}/>
-        <FormAddTask />
+        <FormAddTask addTodoNewTask={addTodoNewTask}/>
     </div>
   )
 }

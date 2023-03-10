@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Table from 'react-bootstrap/Table';
+
+
 
 const TableForTasks = (props) => {
     // console.log(props.tasks)
   return (
-    <table>
+    <Table className=''>
         <thead>
-            <tr>
+            <tr className=''>
                 <th>eil. Nr.</th>
                 <th>uzduotis</th>
                 <th>ar uzbaigta</th>
@@ -24,7 +27,7 @@ const TableForTasks = (props) => {
         }
         </tbody>
         
-    </table>
+    </Table>
   )
 }
 
